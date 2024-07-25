@@ -1,33 +1,38 @@
 * {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     border: 0;
-    
 }
 
 body, html {
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-container {
-    width: 100%;
+    width: 200px;
     background-color: #111827;
-    overflow: auto;
+
+    height: 100%;
+    position: fixed;
 }
 
 .navbar {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    height: 100%;
+    padding-top: 20px;
 }
 
 .navbar a {
-    float: left;
-    text-align: center;
-    padding: 12px;
+    width: 100%;
+    text-align: left;
+    padding: 5px 5px 0px 50px;
     color: white;
     text-decoration: none;
-    margin: 0px 20px;
     font-size: 20px;
     line-height: 50px;
     font-weight: 900;
@@ -37,28 +42,92 @@ body, html {
     background-color: #000;
 }
 
-img {
-    float: left;
-    width: 30px;
+img.logo {
+    width: 50px;
     height: auto;
-    margin-top: 15px;
-    padding-left: 30px;
+    margin: 20px auto;
+    display: block;
 }
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hips.hearstapps.com/hmg-prod/images/crepes-index-64347419e3c7a.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*");
-    height: 90%;
+    height: 100%;
+    width: calc(100% - 200px);
+    margin-left: 200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position:relative;
+    position: relative;
 }
 
 .hero-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90%;
+    height: 100%;
     color: white;
     font-size: 5rem;
 }
+
+#recipe-body {
+    background-color: #111827;
+}
+
+#container {
+    width:30%;
+    padding: 20px;
+    margin: -50px auto;
+    border-radius: 20px;
+    color:white;
+    background-color:#111 ;
+}
+
+.recipe-img {
+    width: 100%;
+    margin: 10px auto;
+    height: auto;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 25px 0px;
+    text-align: center;
+}
+#container > h3 {
+    padding: 30px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+#container > ul, ol {
+    text-align: justify;
+}
+
+li + li {
+    margin-top: 10px;
+}
+
+.back-btn {
+    width:max-content;
+    margin: 30px;
+}
+
+.back-btn > a,
+.top-btn > a {
+    text-decoration: none;
+    color: #555;
+}
+
+.back-btn > a:hover,
+.top-btn > a:hover {
+    color:white;
+}
+
+.top-btn {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    padding: 60px;
+}
+
