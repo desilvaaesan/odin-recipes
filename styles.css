@@ -10,70 +10,98 @@
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.nav-container {
-    width: 200px;
+#main-container {
     background-color: #111827;
+  }
 
-    height: 100%;
-    position: fixed;
-}
+.card {
+    width: 80%;
+    margin: 7em auto;
+  }
 
-.navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    height: 100%;
-    padding-top: 20px;
-}
-
-.navbar a {
-    width: 100%;
-    text-align: left;
-    padding: 5px 5px 0px 50px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 50px;
-    font-weight: 900;
-}
-
-.navbar a:hover {
-    background-color: #000;
-}
-
-img.logo {
-    width: 50px;
-    height: auto;
-    margin: 20px auto;
+#list-container {
     display: block;
-}
+    width: 75%;
+    margin: 5px auto;
+    text-align: center;
+  }
 
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hips.hearstapps.com/hmg-prod/images/crepes-index-64347419e3c7a.jpg?crop=0.888888888888889xw:1xh;center,top&resize=1200:*");
-    height: 100%;
-    width: calc(100% - 200px);
-    margin-left: 200px;
-    background-position: center;
+
+.list {
+    display:inline-block;
+    width: 30%;
+    border-radius: 5%;
+    padding: 2em;
+    margin: 18px 10px;
+    text-align: center;
+    background-color: #151d2c;
+  }
+
+.list a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: ffff;
+  }
+
+h1, h2 {
+    color: #ffff;
+  }
+
+.list-img-carbonara {
+    background: url('https://www.recipetineats.com/tachyon/2023/01/Carbonara_6a.jpg');
+    background-size: 100% 100%;
+  }
+
+.list-img-noodles {
+    background: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F11%2F15%2F6777730-chicken-noodle-salad-Chef-John-1x1-1.jpg&q=60&c=sc&poi=auto&orient=true&h=512');
+    background-size: 100% 100%;
+  }
+
+.list-img-salad {
+    background: url('https://www.allrecipes.com/thmb/IgaoT41xH_qchchlu2_9jsvH0SU=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/258277-salmon-cobb-salad-magazine-4x3-43c651aa647e4ce788afc4222119032e.jpg');
+    background-position: 50% 70%;
+    background-size: auto 100%;
+  }
+
+
+  .list-img-carbonara,
+  .list-img-noodles,
+  .list-img-salad {
+    width: 25ch;
+    height: 30ch;
+    margin: 0px auto;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
+    border-radius: 5%;
+    margin-bottom: 10%;
+  }
 
-.hero-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  .btn-container {
+    width: 100%;
+    margin-top: 1em;
+  }
+  
+  .view-btn {
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #0F766E;
+    border: none;
     color: white;
-    font-size: 5rem;
-}
+    text-align: center;
+    font-size: .85rem;
+    padding: 1em;
+    width: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s;
+  }
+
+  .view-btn:hover {
+    background-color:#0f766d92;
+  }
 
 #recipe-body {
     background-color: #111827;
@@ -85,7 +113,7 @@ img.logo {
     margin: -50px auto;
     border-radius: 20px;
     color:white;
-    background-color:#111 ;
+    background-color:#151d2c ;
 }
 
 .recipe-img {
@@ -136,98 +164,4 @@ li + li {
     margin-top: 80px;
     padding: 60px;
 }
-
-.card {
-    width: 80%;
-    margin: 5em auto;
-
-  }
-
-  #list-container {
-    display: block;
-    width: 75%;
-    margin: 5px auto;
-    text-align: center;
-  }
-
-  #main-container {
-    background-color: #111827;
-  }
-
-  .list {
-    display:inline-block;
-    width: 30%;
-    border-radius: 5%;
-    padding: 2em;
-    margin: 18px 10px;
-    text-align: center;
-    background-color: #151d2c;
-  }
-
-  .list a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: ffff;
-  }
-
-  h1, h2 {
-    color: #ffff;
-  }
-
-  .list-img-carbonara {
-    background: url('https://www.recipetineats.com/tachyon/2023/01/Carbonara_6a.jpg');
-    background-size: 100% 100%;
-  }
-
-  .list-img-noodles {
-    background: url('https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F43%2F2022%2F11%2F15%2F6777730-chicken-noodle-salad-Chef-John-1x1-1.jpg&q=60&c=sc&poi=auto&orient=true&h=512');
-    background-size: 100% 100%;
-  }
-
-  .list-img-salad {
-    background: url('https://www.allrecipes.com/thmb/IgaoT41xH_qchchlu2_9jsvH0SU=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/258277-salmon-cobb-salad-magazine-4x3-43c651aa647e4ce788afc4222119032e.jpg');
-    
-    background-position: 50% 70%;
-    background-size: auto 100%;
-  }
-
-
-  .list-img-carbonara,
-  .list-img-noodles,
-  .list-img-salad {
-    width: 25ch;
-    height: 30ch;
-    margin: 0px auto;
-    background-repeat: no-repeat;
-    border-radius: 5%;
-    margin-bottom: 10%;
-  }
-
-  .btn-container {
-    width: 100%;
-    margin-top: 1em;
-  }
-  
-  .view-btn {
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 10px;
-    background-color: #0F766E;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: .85rem;
-    padding: 1em;
-    width: 50%;
-    transition: all 0.5s;
-    cursor: pointer;
-    opacity: 1;
-    transition: 0.3s;
-  }
-
-  .view-btn:hover {
-    background-color:#0f766d92;
-  }
 
